@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main page</title>
+</head>
+<body>
+    <ul>
+      {% for item in my_list %}
+      <li>{{ item }}</li>   
+      {% endfor %}
+    </ul>
+
+    <ol>
+      {% for pup in puppies %}
+      <li>{{ pup }}</li>
+      {% endfor %}
+    </ol>
+    {% if 'rufus' in puppies %}
+    <p>found you rufus</p>
+    {% else %}
+    <p>rufus is absent</p>
+    {% endif %}
+</body>
+</html>
